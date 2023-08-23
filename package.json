@@ -1,0 +1,14 @@
+{
+  "name": "orange-automation",
+  "version": "1.0.0",
+  "description": "prueba de automatizacion",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Maria Guevara",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.17.4"
+  }
+}
