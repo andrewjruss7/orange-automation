@@ -60,7 +60,7 @@ describe('Claim', () => {
         cy.contains('No Records Found').should('be.visible')
     })
 
-    it.only('Assign Claim', () => {
+    it('Assign Claim', () => {
         claimPO.BotonAssignClaim(),
         claimPO.BotonEmployeeName().type('Chenzira  Chuki'),
         claimPO.ListBox(),
