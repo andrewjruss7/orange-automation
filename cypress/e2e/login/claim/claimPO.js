@@ -50,6 +50,7 @@ class ClaimPO {
 
     BotonAssignClaim(){
         return cy.contains('Assign Claim').click()
+
     }
 
     BotonEmployeeName(){
