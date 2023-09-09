@@ -23,3 +23,14 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import LoginPO from "../e2e/login/loginPO";
+Cypress.Commands.add('loginorange',() => {
+    const loginPO = new LoginPO(); 
+        loginPO.insertUserName().type('Admin');
+        loginPO.insertPassword().type('admin123');
+        loginPO.clickOnLoginButton().click();
+
+        
+    });  
+    
+
