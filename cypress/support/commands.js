@@ -23,3 +23,15 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import OrangePO from "../e2e/login/loginPO"
+
+Cypress.Commands.add('LoginOrange', () => {
+   
+    const orangePO = new OrangePO
+    orangePO.nombreusuario().type('Admin'),
+    orangePO.contraseña().type('admin123'),
+    orangePO.botoniniciarsesion().click(),
+    orangePO. assertlogin() 
+
+})
